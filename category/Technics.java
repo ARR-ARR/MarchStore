@@ -1,24 +1,16 @@
 package category;
 
-import OnlineStore.OnlineStore;
+public class Technics extends Category {
+    private CatPhone catPhone;
 
-public class Technics extends Category{
-    private Phone phone;
-    private OnlineStore onlineStore;
-
-
-    public Technics(String nameCategory,OnlineStore onlineStore) {
+    public Technics(String nameCategory) {
         super(nameCategory);
-        this.onlineStore = onlineStore;
-        phone = new Phone("Телефоны");
+        catPhone = new CatPhone("Телефоны");
 
     }
 
-    public Phone getPhone() {
-        return phone;
+    public CatPhone getPhone() {
+        return catPhone;
     }
 
-    public OnlineStore getOnlineStore() {
-        return onlineStore;
-    }
 }
