@@ -5,12 +5,17 @@ public abstract class Product {
     private String brand;
     private int price;
     private String description;
+    private int article;
 
-    public Product(String nameProduct, String brand, int price, String description) {
+    public Product(String nameProduct, String brand, int price, String description,int article) {
         this.nameProduct = nameProduct;
         this.brand = brand;
         this.price = price;
         this.description = description;
+        this.article = article;
+    }
+    public Product(){
+
     }
 
     public String getNameProduct() {
@@ -43,5 +48,13 @@ public abstract class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getArticle() {
+        return article;
+    }
+
+    public void setArticle(int article) {
+        this.article = article;
     }
 }
