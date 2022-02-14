@@ -18,6 +18,8 @@ public abstract class Product {
 
     }
 
+
+
     public String getNameProduct() {
         return nameProduct;
     }
@@ -56,5 +58,15 @@ public abstract class Product {
 
     public void setArticle(int article) {
         this.article = article;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "nameProduct=" + nameProduct + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                '}';
     }
 }
