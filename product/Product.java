@@ -6,6 +6,7 @@ public abstract class Product {
     private int price;
     private String description;
     private int article;
+    private int quantity;
 
     public Product(String nameProduct, String brand, int price, String description,int article) {
         this.nameProduct = nameProduct;
@@ -13,6 +14,7 @@ public abstract class Product {
         this.price = price;
         this.description = description;
         this.article = article;
+
     }
     public Product(){
 
@@ -63,10 +65,9 @@ public abstract class Product {
     @Override
     public String toString() {
         return
-                "nameProduct=" + nameProduct + '\'' +
-                ", brand='" + brand + '\'' +
-                ", price=" + price +
-                ", description='" + description + '\'' +
-                '}';
+                "nameProduct " + nameProduct +
+                " brand " + brand +
+                " price " + price +
+                " description " + description + " article " +article+"\n";
     }
 }

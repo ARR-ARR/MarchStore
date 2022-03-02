@@ -1,8 +1,7 @@
 package category;
 
-import OnlineStore.OnlineStore;
-import product.Laptop;
 
+import onlineStore.OnlineStore;
 
 public class Technics extends Category{
     private CatPhone catPhone;

@@ -1,18 +1,15 @@
-package OnlineStore;
-
+package onlineStore;
 import category.Technics;
 
 import java.util.Date;
 
-import static OnlineStore.Info.*;
-
-public class OnlineStore implements Info {
+public class OnlineStore implements Info{
     private String nameStore;
     private Technics technics;
 
     public OnlineStore(String nameStore) {
         this.nameStore = nameStore;
-        technics = new Technics("Техника",this);
+
     }
 
     public String getNameStore() {
@@ -49,4 +46,5 @@ public class OnlineStore implements Info {
     public void storeOpen() {
         System.out.println("Добро пожаловать в интернет-магазин: " + getNameStore());
     }
+
 }

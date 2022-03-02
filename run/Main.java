@@ -1,16 +1,25 @@
 package run;
 
-import OnlineStore.OnlineStore;
 
+import product.WriteProduct.WRDBProduct;
+
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        OnlineStore onlineStore = new OnlineStore("@_VES-NA_@");
-        onlineStore.getContact();
-        onlineStore.getTimeStore();
+        WRDBProduct fwDB = new WRDBProduct();
 
-        System.out.println();
+
+        //fwDB.dbWrite();
+        //fwDB.dbReed();
+
+
+
+
+        String description = "Процессор_-_Intel_Atom,_4_ядра,RAM_2G".replace('_', ' ');
+        System.out.println(description);
+
 
     }
 }

@@ -1,4 +1,4 @@
-package OnlineStore;
+package onlineStore;
 
 public interface Info {
 
